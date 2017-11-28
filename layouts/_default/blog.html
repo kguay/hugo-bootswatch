@@ -3,7 +3,6 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-push-4">
-      {{ range first 1 .Data.Pages }}
       <h1 class="news-title">{{ .Title }}</h1>
       <div class="date">Published on <span class="date-format">{{ .Date.Format "January 2, 2006" }}</span> by Kevin Guay</div>
       <ul class="hor-list">
@@ -14,7 +13,7 @@
       {{ .Content }}
           
       {{ partial "disqus.html" . }}
-      {{ end }}
+          
     </div>
         
         
@@ -22,7 +21,7 @@
           
       {{ partial "blog-list.html" . }}
     </div>
-
   </div>
+</div>
      
-  {{ partial "footer.html" . }}
+{{ partial "footer.html" . }}

@@ -4,8 +4,18 @@
     <meta charset="utf-8">
     <title>{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="/css/hugo-bootswatch.css">
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    <!-- <link rel="stylesheet" href="/css/hugo-bootswatch.css"> -->
+    <link rel="stylesheet" href="/css/shoelace.css" type="text/css" media="screen"/>
+    <!-- <link rel="stylesheet" href="/css/devicon.min.css" type="text/css" media="screen"/> -->
+    <!-- <link rel="stylesheet" href="/css/milkpaint.css" type="text/css" media="screen"/> -->
+    <link rel="stylesheet" href="/css/prism.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"/>
   </head>
-  <body>
+  <body id="index">
+    {{ partial "navbar.html" . }}
+    <div class="main">
+      <div id="main-container" class="container">
+        
+      
